@@ -1,0 +1,148 @@
+
+
+PENSE-BETE HTML
+
+​
+
+​
+
+--
+
+​
+
+​
+
+1/ DEPENDANCES, ETC
+
+​
+
+​
+
+Dans le head :
+
+    meta charset
+
+    meta viewport
+
+    titre
+
+    dépendances CSS :
+
+        - feuille de style Google Fonts (police Amaranth pour les titres, Open Sans pour le reste)
+
+        - feuille de style FontAwesome (idéalement en CDN)
+
+        - feuille de style du plugin pour le slider (vous pouvez réutiliser flexslider) *
+
+        - feuille de style normalize (idéalement en CDN)
+
+        
+
+Dans le head ou tout en bas du body :
+
+    dépendances JS :
+
+        - librairie jQuery (idéalement en CDN, utile pour le plugin pour le slider) *
+
+        - fichier js du plugin pour le slider
+
+​
+
+Tout en bas du body
+
+    - votre propre JS (pour déclencher le plugin pour le slider) *
+
+    
+
+​
+
+(* pour ces éléments vous n'êtes pas obligé de les mettre en place tout de suite, ça pourra attendre le moment où vous implémenterez le slider
+
+​
+
+​
+
+--
+
+​
+
+​
+
+2/ STRUCTURE
+
+​
+
+​
+
+- Structurez le contenu du body avec des balises sémantiques
+
+​
+
+- Utilisez les balises de titres h1, h2, .... h6 en fonction de la hiérarchie des contenus (et non pas de leur taille dans la maquette)
+
+​
+
+- En fonction de l'apparence souhaitée sur les écrans larges, n'hésitez pas à ajouter des boîtes qui serviront de containers 
+
+  (à qui vous pouvez donc d'ores et déjà donner une classe container, qu'on définira bien sûr dans notre feuille de style)
+
+​
+
+- La structure que vous avez choisie pour une page pourra-t-elle être appliquée (dans la mesure du possible) aux autres pages ?
+
+​
+
+- N'hésitez pas à donner des ID aux sections spécifiques de vos pages (vous pouvez aussi attendre d'en avoir vraiment besoin - lorsque vous stylerez avec CSS - pour le faire).
+
+​
+
+- Attention à bien choisir entre liens (balise A) et boutons (balise BUTTON).
+
+  Si le but est de vous emmener vers une autre page, c'est un lien. 
+
+  Si le but est d'envoyer un formulaire, ou encore de lancer un traitement JavaScript, c'est un bouton.
+
+  
+
+- Jamais d'élément nativement block à l'intérieur d'un élément nativement inline (par ex : pas de h2 à l'intérieur d'un a)
+
+​
+
+- Passez au validateur HTML à la fin !
+
+​
+
+​
+
+---------------------------
+
+​
+
+​
+
+​
+
+PENSE-BETE CSS
+
+​
+
+​
+
+--
+
+​
+
+​
+
+Tout en haut de votre CSS : 
+
+​
+
+- (facultatif) si vous préférez utilisez par défaut le modèle box-sizing: border-box, appliquez-le sur le sélecteur * 
+
+​
+
+- Définir 1rem (sur le sélecteur HTML) de manière à se faciliter la vie pour la suite.
+
+​
+

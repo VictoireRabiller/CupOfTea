@@ -1,0 +1,607 @@
+/*/////////////////////////*/
+/*Mobile */
+html{
+	font-size: 62.5%; /*1rem = 10px*/
+
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: rgba(0,0,0,0.5);	
+	line-height: 1.6;
+	font-size: 1.6rem;
+ 	margin : 0 auto;
+	text-align: center;
+	font-weight: normal;
+	background-color: #f2f2f2;
+}
+
+.container {
+	max-width: 1100px;
+	margin : 0 auto;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+a, a:hover, a:visited, a:active{
+	text-decoration: none;
+	font-weight: normal;
+}
+a {
+	color: #96B011;
+}
+
+
+
+h1,h2,h3{
+	font-family: 'Amaranth', sans-serif;
+	font-weight: normal;
+
+}
+
+h1{
+	font-size: 4rem;
+	text-align: left;
+	
+}
+
+#titreNoel{
+	color: #96b011;
+	text-align: center;
+}
+
+main {
+	padding : 3rem 1rem 5rem 1rem;
+}
+
+main section{
+	margin: 2rem auto;
+}
+
+
+h2 {
+	font-family: "Amaranth";
+	font-weight: normal;
+	font-size: 2.5rem;
+	color: #96B011;
+}
+
+main h2:after {
+	content: "";
+	display: block;
+	border-top: 1px solid rgba(176,144,103,0.3);
+	margin-top: -17px;
+}
+
+h2 span {
+	background-color: white;
+	padding: 5px;
+}
+
+h3{
+	font-size: 2rem;
+}
+
+
+h4 a{
+	text-transform: uppercase;
+	font-weight: bold;	
+}
+
+
+header {
+	background-image: url(../img/bg.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	color : white;
+
+}
+
+header /*nav ul li*/ a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #ffffff;
+	display: block;
+	text-align: center;
+	line-height: 2;
+	padding: 1rem;
+/*	background-color: rgba(255,255,255,0.15);*/
+
+}
+
+header nav ul li a:hover{
+	opacity:1;
+	background-color: rgba(255,255,255,0.15);
+
+}
+
+header nav:hover a {
+    opacity: 0.5;
+}
+
+
+.ribbon{
+	display: none;
+}
+
+i{
+	font-size: 2.5rem;
+	
+}
+
+#varietesThe, .produit, #notreEquipe, #concept{
+	background-color: #ffffff;
+	padding-top : 1rem;
+}
+
+#panier{
+	position: fixed;
+	top: 30px;
+  	left: 0px;
+  	display: inline-block;
+  	font-weight: bold;
+  	border : 1px solid #abbb54;
+  	border-radius: 0 100px 100px 0;
+  	box-shadow: 2px 2px 2px 0 rgba(0, 0, 255, .2);
+  	background-color: #a5b41a;
+  	padding: 0.5rem 2rem 0.5rem 0;
+  	margin: 1rem 1rem 1rem -1rem;
+ 
+}
+
+p span{
+	display: none;
+}
+
+.fa-shopping-cart{
+	color: #ced69b;
+	border : 2px solid #d1d797;
+  	border-radius: 100%;
+	padding: 1rem;
+	margin: -1rem 0;
+
+
+}
+
+#logo{
+	padding: 7rem 1rem 1rem 1rem;
+
+}
+#promoNoel{
+	display: none;
+}
+
+#promoNoel img{
+	width: 100%;
+}
+
+header .promoLivraison{
+	text-align: center;
+	margin: 0 auto;
+	background-color: rgba(0,0,0,0.1);
+
+}
+.produit article{
+	padding-bottom: 3rem;
+}
+
+
+
+/*section{
+	border-top: 1px dashed #96b011; 
+}
+*/
+section #varietesThe {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-content: center;
+
+}
+
+#varietesThe h2{
+	width: 100%;
+}
+
+
+#varietesThe article{
+	display: inline-block;
+	width: 48%;
+	align-self: center;	
+
+}
+#varietesThe a{
+	color: gray;
+	
+}
+
+
+.prix{
+	font-size: 2.4rem;
+	font-weight: bold;
+}
+
+/*/////////////////////
+PAGE LISTING ABOUT*/
+
+#listing h2, #notreEquipe h2,#notreEquipe p,#concept>p {
+text-align: left;
+}
+
+aside{
+	background-color: #eaefcf;
+
+}
+aside div{
+	padding : 2rem;
+}
+
+aside>div>h3{
+	margin : 0 auto;
+}
+
+.produit img {
+	width: 30rem;
+}
+
+
+.yellow {
+	color: #ffdc10;
+}
+
+.prixProduit{
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+
+/*bouton voir ce produit*/
+.produit a{
+	display: block;
+	background-color: #b09067;
+	font-family: 'Amaranth', sans-serif;
+	font-weight: normal;
+	color: white;
+	text-decoration: none;
+	padding:0.5rem 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .1rem;
+	width : 200px;
+	margin: 0 auto;
+
+}
+button{
+	display: block;
+	background-color: #b09067;
+	font-family: 'Amaranth', sans-serif;
+	font-weight: normal;
+	color: white;
+	text-decoration: none;
+	padding:0.5rem 1rem;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: .1rem;
+	width : 200px;
+	margin: 0 auto;
+	height: 50px;
+
+}
+
+/* Partie Product */
+#product {
+	background-color: white;
+	padding: 25px;
+}
+
+#product-detail {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+}
+
+#product-detail h1 {
+	margin: 0;
+	font-size: 3rem;
+}
+
+#product-detail h2 {
+	margin: 0;
+	color: #999;
+}
+
+#product-detail h2::after {
+	display: none;
+}
+
+#product-detail p {
+	font-style: italic;
+}
+
+#rating {
+	text-align: right;
+	color: #999;
+	font-size: 2.5rem;
+}
+
+#rating a {
+	display: block;
+	font-size: 1.6rem;
+}
+
+.gold {
+	color: #FFDC0F;
+}
+
+.price h3 {
+	font-family: "Amaranth";
+	font-weight: normal;
+	font-size: 4rem;
+	margin-top: 0;
+}
+
+.price a {
+	display: block;
+}
+
+#product-quantity {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	text-align: right;
+}
+
+#product-quantity select {
+	width: 300px;
+	padding: 5px;
+}
+
+#wishlist::before {
+	content: "\F004";
+	font-family: "FontAwesome";
+	margin: 5px;
+	color: #E7877A;
+}
+
+
+
+/*FOOTER*/
+footer{
+	background-image: url(../img/bg.jpg);
+	background-position: center bottom;
+	background-size: cover;
+	color:white;
+}
+ 
+footer nav h4{
+	padding-top:2rem;
+}
+
+footer nav ul li{
+	display: block;
+	padding: 0.5rem;
+	font-weight: bold;
+}
+
+#licence {
+    margin : 2em auto;
+    display: block;
+    text-align: center;
+}
+
+#licence img {
+    width: 50px;
+}
+
+small{
+	font-size: 70%;
+}
+
+footer a{
+	color : white;
+	text-decoration: none; 
+
+}
+
+#pointFort p, footer section article {
+	text-transform: uppercase;
+	color: #d1d797;
+
+}
+
+
+#pointFort{
+	background-color: rgba(0,0,255,0.1);
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	padding: 2rem 0;
+
+}
+
+#pointFort article{
+	display: inline-block;
+	width: 48%;
+
+}
+
+
+footer nav{
+	width: 100%;
+	background-color: rgba(255,255,255,0.2);
+}
+
+
+
+
+/* CLASSES "HELPERS" */
+
+.clear::after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+.left {float: left;}
+.right {float: right;}
+.center {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.hidden {display: none;}
+
+.bold {font-weight: bold;}
+
+/* BUTTON */
+.btn {display: inline-block;}
+.small-btn {padding: 5px 10px}
+.regular-btn {padding: 10px 15px}
+.big-btn {padding: 20px 25px}
+
+
+
+
+/* Tablette */
+
+@media only screen and (min-width: 768px) {
+	
+	#promoNoel{
+	display: block;
+	}
+
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+		flex-flow: row nowrap;
+	}
+
+
+
+	header nav ul li{
+		width: 20%;
+	}
+
+	header>div>a{
+		text-align: left;
+	}
+
+	.ribbon{
+		display : block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: auto;
+		width: 100px;
+	}
+
+
+
+
+	#logo{
+		padding: 1rem 0rem 1rem 5rem;
+	}
+
+
+	#pointFort article{
+		width: 20%;
+
+	}
+
+	footer nav{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	footer>nav>article{
+		display: inline-block;
+		width: 30%;
+
+	}
+
+	#panier{
+		position: absolute;
+		top: 5rem;
+		right: 0;
+		left: auto;
+		border-style: none;
+		box-shadow: inherit;
+		background-color: transparent;
+  
+ 	}
+
+
+
+
+ 	p span{
+ 		display: inline-block;
+ 		color: #ced69b;
+
+ 	}
+
+ 	#notreEquipe img{
+	float: left;
+	}
+	 
+	
+}
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1025px) {
+
+
+	#varietesThe article{
+		width: 19%;
+
+	}
+
+	.produit{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+	.produit article{
+		display: inline-block;
+		width: 30%;
+	}
+
+	aside{
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+	}
+
+	aside div{
+		display: inline-block;
+		width: 30%;
+	}
+
+
+
+
+}
