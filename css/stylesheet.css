@@ -127,6 +127,9 @@ header nav:hover a {
     opacity: 0.5;
 }
 
+img{
+	max-width: 100%;
+}
 
 .ribbon{
 	display: none;
@@ -291,11 +294,13 @@ button{
 	text-align: center;
 	letter-spacing: .1rem;
 	width : 200px;
-	margin: 0 auto;
+	margin: 10px 0;
 	height: 50px;
 
 }
-
+button:hover {
+    background-color: rgba(176,144,103,0.75);
+}
 /* Partie Product */
 #product {
 	background-color: white;
@@ -309,6 +314,13 @@ button{
 	-webkit-box-pack: justify;
 	    -ms-flex-pack: justify;
 	        justify-content: space-between;
+}
+#product-detail,#product-quantity {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		text-align: center;
 }
 
 #product-detail h1 {
@@ -328,6 +340,12 @@ button{
 #product-detail p {
 	font-style: italic;
 }
+
+#product-name>h1{
+	text-align: center;
+}
+
+
 
 #rating {
 	text-align: right;
@@ -355,29 +373,14 @@ button{
 	display: block;
 }
 
-#product-quantity {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: justify;
-	    -ms-flex-pack: justify;
-	        justify-content: space-between;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	text-align: right;
+.price button {
+	margin: 0 auto;
+	text-align: center;
 }
 
-#product-quantity select {
-	width: 300px;
-	padding: 5px;
-}
+#wishlist{
+	padding-top : 3rem;
 
-#wishlist::before {
-	content: "\F004";
-	font-family: "FontAwesome";
-	margin: 5px;
-	color: #E7877A;
 }
 
 
@@ -423,6 +426,7 @@ footer a{
 #pointFort p, footer section article {
 	text-transform: uppercase;
 	color: #d1d797;
+	text-align: center;
 
 }
 
@@ -552,8 +556,40 @@ footer nav{
   
  	}
 
+	#product-detail {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: justify;
+		    -ms-flex-pack: justify;
+		        justify-content: space-between;
+	}
+	#product-quantity {
+		display: flex;
+		flex-flow: nowrap;
+		justify-content: space-between;
+		align-items: center;
+		text-align: right;
+	}
+	#product-quantity img{
+		width: 45%;
+	}
+	#product-quantity div{
+		width: 45%;
+	}
+	
 
+	#product-quantity select {
+		width: 300px;
+		padding: 5px;
+	}
 
+	.price button {
+		margin: 0;
+	}
+	.productButton{
+		float: right;
+	}
 
  	p span{
  		display: inline-block;
@@ -599,6 +635,11 @@ footer nav{
 	aside div{
 		display: inline-block;
 		width: 30%;
+	}
+
+	
+	#product-name>h1,h2,p{
+		text-align: left;
 	}
 
 
